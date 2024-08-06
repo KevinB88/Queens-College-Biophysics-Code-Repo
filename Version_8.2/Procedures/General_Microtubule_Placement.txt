@@ -1,0 +1,32 @@
+    Generalizing the microtubule placement within algorithm, procedure:
+
+    Done within main() at Main.py
+        Give a container filled with angles to place the microtubules across within the domain, then sort the container
+        in ascending order. (This is done to ensure that all microtubules are covered during the sequential iteration step)
+
+        EX. [3,1,2] -> sort() -> [1, 2, 3]
+
+    Done with solve() at Computations_ii.py
+
+        Before sequential iteration:
+
+        For each angle within the container, associate a 2-Dimensional[k][m] array corresponding to a microtubule at the specified angle
+        The data-structure containing the (key,value) pair : (angle, 2D-Microtubule array) is known as a 'dictionary' in python.
+        Note at this point in the code, all 2-D Microtubule arrays at each key-value pair contains only zeros.
+
+        During sequential iteration:
+
+        For the current (key,value) pair within the dictionary, check if the key (angle), matches the current value of n (angle)
+        we are iterating upon within the innermost for loop.
+
+            If match:
+                Update the corresponding value (microtubule) of the current (angle), for the k+1th step. That is run the following
+                function to update the appropriate microtubule: u_tube()
+                Iterate a counter corresponding to an index within the dictionary to keep the next (key,value) pair on standby (for eventual updates)
+
+            If no match:
+                Continue, the angle that has been iterated upon is not aligned with the advective layer.
+                (All iterations are with respect to the diffusive layer, however, there are obviously angles associated to the advective layer across iterations)
+
+        After sequential iteration:
+            Return the dictionary, tabulate results for each individual microtubule array, and plot when appropriate
