@@ -1,0 +1,8 @@
+Version 8.2.
+
+Unit tests are still necessary before declaring validity of this version.
+
+Unit tests are required on the following:
+
+Computations of mass-loss, mass-base, phi-densitiy, and rho-density (across all appropriate dimensions)
+
