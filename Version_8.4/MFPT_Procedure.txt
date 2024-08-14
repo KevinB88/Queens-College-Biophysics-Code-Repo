@@ -1,0 +1,27 @@
+
+This will be done for different values of W.
+
+The following is the procedure which will be done to
+properly calculate the MFPT.
+
+Compute for global maximum of the graph of the
+mass loss rate with respect to time.
+
+Then multiply the current number of time-steps by a factor of 5.
+
+Use this is in the computation for MFPT.
+
+The computation for MFPT is done for varying values of W
+
+Keep trying this for larger and larger values of W,
+you should begin to notice the curve begin to stabilize
+over successively large values.
+
+Keep running this algorithm for a varying number of
+microtubule placements.
+
+
+Find the time step associated to the global max
+of the mass-loss-rate graph
+
+
