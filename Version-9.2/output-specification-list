@@ -1,0 +1,9 @@
+
+        'global-max' : acquiring the global max from the mass function : mass versus time
+        'mean-flow-passage-time': m_f_p_t,
+        'diffusive_layer': diffusive_layer,
+        'central_patch': central_phi_tab,
+        'advective_layer': advective_layer,
+        'total_mass': mass_tab,
+        'mass_loss_rate_j_r_r': mass_tab,
+        'mass_loss_rate_derivative': mass_loss_tab_ii
